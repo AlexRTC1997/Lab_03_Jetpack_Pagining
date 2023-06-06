@@ -15,7 +15,7 @@ class UserAdapter : PagingDataAdapter<User, UserViewHolder>(DiffUtilCallBack()) 
         viewType: Int
     ): UserViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.row_user, parent, false)
+            .inflate(R.layout.user_row, parent, false)
         return UserViewHolder(view)
     }
 

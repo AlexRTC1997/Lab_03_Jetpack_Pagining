@@ -11,14 +11,14 @@ import kotlinx.coroutines.launch
 import org.idnp.jetpackpagingsample.adapters.UserAdapter
 import org.idnp.jetpackpagingsample.paging.UserViewModel
 
-class MainActivity : AppCompatActivity() {
+class CountryMainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.country_activity_main)
 
         val viewModel by viewModels<UserViewModel>()
-        val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
+        val recyclerView = findViewById<RecyclerView>(R.id.country_recycler_view)
         val pagingAdapter = UserAdapter()
 
         recyclerView.adapter = pagingAdapter
