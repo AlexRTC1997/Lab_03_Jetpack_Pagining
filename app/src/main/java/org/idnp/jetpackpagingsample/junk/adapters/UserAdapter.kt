@@ -1,4 +1,4 @@
-package org.idnp.jetpackpagingsample.junk.adapters//package org.idnp.jetpackpagingsample.adapters
+//package org.idnp.jetpackpagingsample.junk.adapters//package org.idnp.jetpackpagingsample.adapters
 //
 //import android.view.LayoutInflater
 //import android.view.ViewGroup
