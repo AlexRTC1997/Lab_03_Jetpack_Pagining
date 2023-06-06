@@ -32,7 +32,6 @@ class CountryRepository {
             countries.add(country)
         }
 
-
         return countries
     }
 }
