@@ -1,7 +1,7 @@
-package org.idnp.jetpackpagingsample.model
+package org.idnp.jetpackpagingsample.junk.model
 
 import android.util.Log
-import org.idnp.jetpackpagingsample.entities.User
+import org.idnp.jetpackpagingsample.junk.entities.User
 
 class UserRepository {
     fun getUsers(nextPageNumber: Int): List<User> {

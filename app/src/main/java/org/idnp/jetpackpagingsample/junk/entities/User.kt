@@ -1,4 +1,4 @@
-package org.idnp.jetpackpagingsample.entities
+package org.idnp.jetpackpagingsample.junk.entities
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

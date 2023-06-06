@@ -1,9 +1,9 @@
-package org.idnp.jetpackpagingsample.paging
+package org.idnp.jetpackpagingsample.junk.paging
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import org.idnp.jetpackpagingsample.entities.User
-import org.idnp.jetpackpagingsample.model.UserRepository
+import org.idnp.jetpackpagingsample.junk.entities.User
+import org.idnp.jetpackpagingsample.junk.model.UserRepository
 import java.io.IOException
 
 class UserPagingSource(

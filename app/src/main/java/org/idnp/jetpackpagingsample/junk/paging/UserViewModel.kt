@@ -1,4 +1,4 @@
-package org.idnp.jetpackpagingsample.paging
+package org.idnp.jetpackpagingsample.junk.paging
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -7,8 +7,8 @@ import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
 import kotlinx.coroutines.flow.Flow
-import org.idnp.jetpackpagingsample.entities.User
-import org.idnp.jetpackpagingsample.model.UserRepository
+import org.idnp.jetpackpagingsample.junk.entities.User
+import org.idnp.jetpackpagingsample.junk.model.UserRepository
 
 class UserViewModel : ViewModel() {
     private val userRepository: UserRepository = UserRepository()

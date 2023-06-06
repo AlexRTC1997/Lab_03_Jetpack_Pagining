@@ -9,7 +9,8 @@ import org.idnp.jetpackpagingsample.entities.Country
 class CountryViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     private val idText = view.findViewById<TextView>(R.id.textViewId) as TextView
     private val nameEnText = view.findViewById<TextView>(R.id.textViewNameEn) as TextView
-//    private val nameEsText = view.findViewById<TextView>(R.id.textViewNameEs) as TextView
+
+    //    private val nameEsText = view.findViewById<TextView>(R.id.textViewNameEs) as TextView
 //    private val continentEnText = view.findViewById<TextView>(R.id.textViewContinentEn) as TextView
 //    private val continentEsText = view.findViewById<TextView>(R.id.textViewContinentEs) as TextView
     private val capitalEnText = view.findViewById<TextView>(R.id.textViewCapitalEn) as TextView
