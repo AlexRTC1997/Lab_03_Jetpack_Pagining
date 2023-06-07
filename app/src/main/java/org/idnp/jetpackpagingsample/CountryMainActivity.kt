@@ -44,22 +44,9 @@ class CountryMainActivity : AppCompatActivity() {
             .countryDao()
 
         GlobalScope.launch {
-            for (i in 0..5) {
+            for (i in countries_data.indices) {
                 dao.insert(
-                    Country(
-                        id = 0,
-                        name_en = "Name_en $i",
-                        name_es = "Name_es $i",
-                        continent_en = "Continent_en $i",
-                        continent_es = "Continent_es $i",
-                        capital_en = "Capital_en $i",
-                        capital_es = "Capital_es $i",
-                        dial_code = "Dial_code $i",
-                        code_2 = "Code_2 $i",
-                        code_3 = "Code_3 $i",
-                        tld = "Tld $i",
-                        km2 = i * 1000
-                    )
+                    countries_data[i]
                 )
             }
         }

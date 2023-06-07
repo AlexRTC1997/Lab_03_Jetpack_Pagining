@@ -17,7 +17,7 @@ import org.idnp.jetpackpagingsample.model.CountryRepository
 class CountryViewModel(app: Application) : AndroidViewModel(app) {
     private val countryRepository: CountryRepository = CountryRepository()
 
-    val dao = Room.databaseBuilder(app, CountryDatabase::class.java, "countries-db").build()
+    private val dao = Room.databaseBuilder(app, CountryDatabase::class.java, "countries-db").build()
         .countryDao()
 
     fun items(): Flow<PagingData<Country>> {
