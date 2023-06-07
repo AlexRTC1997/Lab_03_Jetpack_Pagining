@@ -9,7 +9,9 @@
 
 Taking the code presented in the section "II Exercise solved" and using the file "countries.txt":
 to. 
+
 a. Implement paging (Jetpack Paging v3) with a data repository built using Jetpack Room
+
 b. The data must be displayed on at least 5 pages of 20 records each.
 
 ## Demo
