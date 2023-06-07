@@ -3,8 +3,8 @@ package org.idnp.jetpackpagingsample.model
 import android.util.Log
 import org.idnp.jetpackpagingsample.entities.Country
 
-class CountryRepository {
-    fun getCountries(nextPageNumber: Int): List<Country> {
+class CountryRepository() {
+    fun getCountries(nextPageNumber: Int): ArrayList<Country> {
         Log.d("[Next Page Number]: ", nextPageNumber.toString())
 
         val countries = arrayListOf<Country>()

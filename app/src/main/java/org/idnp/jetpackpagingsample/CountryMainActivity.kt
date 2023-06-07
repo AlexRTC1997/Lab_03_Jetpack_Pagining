@@ -40,7 +40,7 @@ class CountryMainActivity : AppCompatActivity() {
 
     // Populate Country Database
     private fun prePopDB() {
-        val dao = Room.databaseBuilder(this, CountryDatabase::class.java, "country-db").build()
+        val dao = Room.databaseBuilder(this, CountryDatabase::class.java, "countries-db").build()
             .countryDao()
 
         GlobalScope.launch {
