@@ -11,7 +11,6 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 import org.idnp.jetpackpagingsample.adapters.CountryAdapter
-import org.idnp.jetpackpagingsample.entities.Country
 import org.idnp.jetpackpagingsample.model.CountryDatabase
 import org.idnp.jetpackpagingsample.paging.CountryViewModel
 
@@ -29,13 +28,14 @@ class CountryMainActivity : AppCompatActivity() {
             addItemDecoration(DividerItemDecoration(this.context, DividerItemDecoration.VERTICAL))
         }
 
+        prePopDB()
+
         lifecycleScope.launch {
             viewModel.items().collectLatest { pageData ->
                 pagingAdapter.submitData(pageData)
             }
         }
 
-        prePopDB()
     }
 
     // Populate Country Database
